@@ -60,24 +60,6 @@ Our advanced stablecoin logic demonstrates:
 3. **Collateral Management:** Dynamic collateral ratios with liquidation protection
 4. **Batch Operations:** Gas-optimized bulk minting/burning
 
-\`\`\`
-┌─────────────────┐
-│  Fiat Gateway   │
-└────────┬────────┘
-         │ PIX/Wire Transfer
-         ▼
-┌─────────────────┐      ┌──────────────────┐
-│ Fountain API    │◄────►│  Arc Blockchain  │
-│  (Backend)      │      │  Smart Contracts │
-└────────┬────────┘      └──────────────────┘
-         │                        │
-         │                        │ USDC/EURC
-         ▼                        ▼
-┌─────────────────┐      ┌──────────────────┐
-│   Custodial     │      │  Circle Gateway  │
-│    Wallets      │◄────►│      & CCTP      │
-└─────────────────┘      └──────────────────┘
-\`\`\`
 
 ### Integration with Circle's Ecosystem
 
@@ -135,13 +117,12 @@ Our pilot partner **Sônica** manages two clients moving **~$750,000 USD monthly
 
 ## 👥 Team
 
-Our team has **5+ years of blockchain infrastructure experience** and has delivered **2 projects for DREX** (Brazil's Central Bank Digital Currency pilot).
+
 
 ---
 
-## 📊 ETHGlobal Submission
 
-### Qualification Requirements
+### Keys
 
 ✅ **Functional MVP:** Live demo at [app-fountain.vercel.app](https://app-fountain.vercel.app/)  
 ✅ **Architecture Diagram:** See above  
